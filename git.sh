@@ -1,3 +1,5 @@
+# Get's current branch name
+
 cp=$(tmux display -p "#{pane_current_path}")
 
 if (cd $cp && git rev-parse --is-inside-work-tree > /dev/null 2>&1); then
